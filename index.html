@@ -6,36 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Gallery</title>
     <link rel="stylesheet" href="style.css">
-
+    <script src="script.js"></script>
 </head>
 <body>
     <div id="project">
-        <h1>Gabriela's Gallery</h1>
-        
+        <h1 class="head">Gabriela's Gallery</h1>
+         
         
         <div class="container">
-            <article class="card">
-                <a href="#"><img src="#" alt="#"></a>
+            <div class="card">
+                <a href="#"><img src="../img-example.jpeg" alt="#"></a>
                 <h2>My Hobby Page</h2>
-                <p id="card1-text" class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda mollitia eaque illo dignissimos quaerat, maxime nostrum dolorem porro recusandae enim eius rerum deserunt quis. Nulla inventore architecto repellendus delectus ea?</p>
-                <button id="card1-button">Show More</button>
-            </article>
+                <p id="card1-text" class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    <div id="div1">Assumenda mollitia eaque illo dignissimos quaerat, maxime nostrum dolorem porro recusandae enim eius rerum deserunt quis. Nulla inventore architecto repellendus delectus ea?</div></p>
+                <button id="show-more" onclick="toggle()">Show More</button>
+                </div>
 
-            <article class="card">
-                <a href="#"><img src="#" alt="#"></a>
+            <div class="card">
+                <a href="#"><img src="../img-example.jpeg" alt="#"></a>
                 <h2>Login Project</h2>
-                <p id="card2-text" class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique perspiciatis exercitationem, dignissimos quod non deserunt vel odit assumenda debitis laboriosam nulla id aliquid fuga harum, delectus sapiente ipsum mollitia obcaecati!</p>
-                <button id="card2-button">Show More</button>
-            </article>
+                <p id="card2-text" class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    <div id="div2">Similique perspiciatis exercitationem, dignissimos quod non deserunt vel odit assumenda debitis laboriosam nulla id aliquid fuga harum, delectus sapiente ipsum mollitia obcaecati!</div></p>
+                <button id="show-more" onclick="toggle2()">Show More</button>
+                </div>
 
-            <article class="card">
-                <a href="#"><img src="#" alt="#"></a>
+            <div class="card">
+                <a href="#"><img src="../img-example.jpeg" alt="#"></a>
                 <h2>Application Website</h2>
-                <p id="card3-text" class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In possimus recusandae architecto ducimus eaque dolor quam molestias quaerat. Reiciendis aut, quidem adipisci fugiat odit velit tempora nobis expedita aliquam? Delectus.</p>
-                <button id="card3-button">Show More</button>
-            </article>
+                <p id="card3-text" class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <div id="div3">In possimus recusandae architecto ducimus eaque dolor quam molestias quaerat. Reiciendis aut, quidem adipisci fugiat odit velit tempora nobis expedita aliquam? Delectus.</div></p>
+                <button id="show-more" onclick="toggle3()">Show More</button>
+            </div>
         </div>
 
     </div>
+
+    <script>
+        function toggle() {
+            var x = document.getElementById('div1');
+            
+
+            if(x.style.display ===  "none") {
+                x.style.display = "block";
+            }
+
+            else{
+                x.style.display = "none";
+            }
+        }
+
+        function toggle2(){
+            var y = document.getElementById('div2');
+
+            if(y.style.display ===  "none") {
+                y.style.display = "block";
+            }
+            else{
+                y.style.display = "none";
+            }
+        }
+
+        function toggle3(){
+            var z = document.getElementById('div3');
+
+            if(z.style.display ===  "none") {
+                z.style.display = "block";
+            }
+            else{
+                z.style.display = "none";
+            }
+        }    
+    </script>
 </body>
 </html>
